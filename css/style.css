@@ -1,0 +1,92 @@
+*{transition: all .1s ease-in;}
+
+body {
+	font: 400 26px/1.3 "Tebuchet MC", Tebuchet, Arial, sans-serif;
+	background: #3B3F45;
+	border: 25px solid #fff;
+	color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+ }
+
+.ba-header, .ba-footer {
+	text-align: center;	/*текст по центру */
+	background: #4a4f56;	/*цвет фона */
+	color: #e97f81;	/*цвет текста*/
+	padding: 15px 0 10px;	/*внутрений отступ */
+	line-height: 10px;	/*междустрочный интервал */
+}
+
+h1{
+	font-size: 36px;
+}
+
+h4{
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.ba-container{
+	max-width: 800px; /* максимальная ширина*/
+	margin:  0 auto; /*отступы сторон*/
+	padding: 20px 10px;
+}
+
+.ba-sopping-list{
+	list-style: none; /*убирает точки со списка*/
+	color: #fff;
+	padding: 0;
+	margin-bottom: 50px;
+}
+
+.ba-sopping-list li {
+	background: #7A7593;
+	border-top: 0px solid #fff;
+}
+
+.ba-sopping-list label{
+	display: block;
+	cursor: pointer;
+	padding: 20px 0 20px 20px;
+}
+
+.ba-sopping-list [type="checkbox"]{
+	height: 25px;
+	width: 25px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	transform: scale(1.5)
+}
+
+.ba-sopping-list [type="checkbox"]:checked + span{
+	text-decoration: line-through;
+	color: #A3A0B5;
+}
+
+.ba-sopping-list li:nth-child(odd){
+	background: #88839E;
+}
+
+.ba-sopping-list li:hover{
+	background: #625E77;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+
+.ba-sopping-list li:active{
+	background: #e97f81;
+}
+
+.ba-description{
+	font-size: 16px;
+	color:#A3A0B5;
+}
+
+.ba-sopping-list .ba-description:before{
+	content: "("
+}
+
+.ba-sopping-list .ba-description:after{
+	content: ")"
+}
