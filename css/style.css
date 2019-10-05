@@ -9,6 +9,15 @@ body {
 	padding: 0;
  }
  
+ html {
+	height: 100%;
+ }
+ 
+ html,
+ body {
+	min-height: 100%;
+ }
+
 .ba-header, .ba-footer {
 	text-align: center;	/*текст по центру */
 	background: #4a4f56;	/*цвет фона */
